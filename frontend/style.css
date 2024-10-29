@@ -1,0 +1,155 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Added background color for better contrast */
+}
+
+/* Title Styling */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease;
+    font-family: 'Verdana', sans-serif;
+}
+
+.title:hover {
+    transform: scale(1.2);
+    color: #5a67d8;
+}
+
+/* Exercise List Styling */
+.exercise-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.exercise-item {
+    background-color: #e2e8f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button Styling */
+button {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4c51bf;
+}
+
+/* Back Link */
+.back-link {
+    display: block;
+    margin-top: 10px;
+    color: #5a67d8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #5a67d8;
+}
+
+/* Error Page */
+.error-page h1 {
+    font-size: 72px;
+    color: #e53e3e;
+}
+
+.error-page p {
+    font-size: 18px;
+    color: #555;
+}

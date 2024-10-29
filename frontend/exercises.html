@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise List</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Exercise List</h2>
+        <div class="exercise-list">
+            <div class="exercise-item">Push-Ups</div>
+            <div class="exercise-item">Jogging (30 mins)</div>
+            <div class="exercise-item">Yoga Stretching</div>
+            <div class="exercise-item">Plank (5 mins)</div>
+            <div class="exercise-item">Squats (20 reps)</div>
+            <div class="exercise-item">Burpees (10 reps)</div>
+            <div class="exercise-item">Cycling (15 mins)</div>
+            <div class="exercise-item">Lunges (20 reps)</div>
+        </div>
+        <div class="button-group">
+            <button onclick="navigateToEdit()">Add Exercise</button>
+            <button onclick="navigateToEdit()">Edit Exercise</button>
+            <button onclick="navigateToEdit()">Remove Exercise</button>
+        </div>
+        <a href="/" onclick="route(event)" class="back-link">Back to Home</a>
+    </div>
+
+    <script>
+        // Function to navigate directly to the Edit Exercise page
+        function navigateToEdit() {
+            window.location.pathname = '/edit_exercise';
+        }
+    </script>
+</body>
+</html>
